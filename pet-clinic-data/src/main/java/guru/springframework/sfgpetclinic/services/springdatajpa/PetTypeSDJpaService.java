@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class PetTypeSDJpaService implements PetTypeService {
 
-    private PetTypeRepository petTypeRepository;
+    private final PetTypeRepository petTypeRepository;
 
     public PetTypeSDJpaService(PetTypeRepository petTypeRepository) {
         this.petTypeRepository = petTypeRepository;
