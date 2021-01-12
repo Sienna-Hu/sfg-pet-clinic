@@ -27,6 +27,9 @@ It is an opinionated version of the classic reference application. The idea of P
         - Create a Class `DataLoader implements CommandLineRunner`
         - Takes in `OwnerService` and `VetService` as property
         - Override run(String... args) method to initialize and save data
+9. Inherit static resources from the original Spring Pet Clinic application and apply their layout to my application
+    - Copy Master Template from Spring Pet Clinic
+    - Apply their Layout to each of my index page
     
 ## What I have learned from the project
 1. Understand OOP in practice (completely mimicing real life: have a BaseEntity - Person extends BaseEntity - Owner & Vet extends Person etc.)
