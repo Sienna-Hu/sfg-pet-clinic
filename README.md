@@ -11,6 +11,8 @@ It is an opinionated version of the classic reference application. The idea of P
     - BaseEntity -> Person -> Owner, Vet
     - BaseEntity -> Pet
     - BaseEntity -> PetType
+    - BaseEntity -> Specialty
+    - BaseEntity -> Visit
 3. Refactor the project into Multi-Module project using Maven
 4. Using the Maven Release Plugin
 5. Service Layer: Interfaces for Services 
@@ -30,6 +32,14 @@ It is an opinionated version of the classic reference application. The idea of P
 9. Inherit static resources from the original Spring Pet Clinic application and apply their layout to my application
     - Copy Master Template from Spring Pet Clinic
     - Apply their Layout to each of my index page
+10. Spring Data JPA Implementation: implement Spring Data JPA based services
+    1. Convert POJOs to JPA Entities
+        - `@Entity`, `@MappedSuperClass`
+    2. Add Spring Data JPA Repositories
+        - `Interface extends CrudRepository<T, ID>`
+    3. Add Spring Data JPA services Layer
+        - Utilizing repositories to retrieve data
+        
     
 ## What I have learned from the project
 1. Understand OOP in practice (completely mimicing real life: have a BaseEntity - Person extends BaseEntity - Owner & Vet extends Person etc.)
