@@ -11,12 +11,6 @@ import java.util.Set;
 @Profile({"default", "map"})
 public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService {
 
-    private final VisitService visitService;
-
-    public VisitServiceMap(VisitService visitService) {
-        this.visitService = visitService;
-    }
-
     @Override
     public Set<Visit> findAll() {
         return super.findAll();
