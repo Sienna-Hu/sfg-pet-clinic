@@ -44,3 +44,4 @@ It is an opinionated version of the classic reference application. The idea of P
 ## What I have learned from the project
 1. Understand OOP in practice (completely mimicing real life: have a BaseEntity - Person extends BaseEntity - Owner & Vet extends Person etc.)
 2. Understand Spring MVC in practice (creating service layer, controller layer, and view layer)
+3. Know the workflow of typical web development - how teams collaborate through version controll tool
