@@ -7,31 +7,40 @@ It is an opinionated version of the classic reference application. The idea of P
 ## Steps I took (my notes)
 
 1. Initialize the project from Spring Initialzr
+
 2. Create the basic POJO Data Model
     - BaseEntity -> Person -> Owner, Vet
     - BaseEntity -> Pet
     - BaseEntity -> PetType
     - BaseEntity -> Specialty
     - BaseEntity -> Visit
+    
 3. Refactor the project into Multi-Module project using Maven
+
 4. Using the Maven Release Plugin
+
 5. Service Layer: Interfaces for Services 
     - CrudService -> OwnerService, PetService, VetService
        - Basic functions of CrudService: `findAll()`, `findById()`, `save()`, `delete()`, `deleteById()`
+       
 6. Map Implementation: Implement Map based Services
     - AbstractMapService -> OwnerServiceMap, PetServiceMap, and OwnerServiceMap
+    
 7. Controller Layer: Index Page and Controllers
     - IndexController, OwnerController, and VetController
         - Have a corresponding Service property
     - Under templates: index.html, owners/index.html, and vets/index.html
+    
 8. Load Data on Startup
     - Initialize data:
         - Create a Class `DataLoader implements CommandLineRunner`
         - Takes in `OwnerService` and `VetService` as property
         - Override run(String... args) method to initialize and save data
+        
 9. Inherit static resources from the original Spring Pet Clinic application and apply their layout to my application
     - Copy Master Template from Spring Pet Clinic
     - Apply their Layout to each of my index page
+    
 10. Spring Data JPA Implementation: implement Spring Data JPA based services
     1. Convert POJOs to JPA Entities
         - `@Entity`, `@MappedSuperClass`
