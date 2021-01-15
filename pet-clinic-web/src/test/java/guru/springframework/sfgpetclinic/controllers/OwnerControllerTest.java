@@ -51,9 +51,4 @@ class OwnerControllerTest {
                 .andExpect(model().attribute("owners", hasSize(2)));
     }
 
-    @Test
-    void findOwners() throws Exception {
-        mockMvc.perform(get("/owners/find"))
-                .andExpect(view().name("notimplemented"));
-    }
 }
