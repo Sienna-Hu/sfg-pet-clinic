@@ -49,6 +49,10 @@ It is an opinionated version of the classic reference application. The idea of P
     3. Add Spring Data JPA services Layer
         - Utilizing repositories to retrieve data
         
+11. Implement View Layer
+    1. Page for owner details.
+        - `showOwner()` in OwnerController, `ownerDetails.html`
+        
     
 ## What I have learned from the project
 1. Understand OOP in practice (completely mimicing real life: have a BaseEntity - Person extends BaseEntity - Owner & Vet extends Person etc.)
