@@ -85,8 +85,6 @@ public class DataLoader implements CommandLineRunner {
 
         System.out.println("Loaded Owners...");
 
-        System.out.println(ownerService.findAllByLastNameLike("Weston"));
-
         Vet vet1= new Vet();
         vet1.setFirstName("Sam");
         vet1.setLastName("Axe");
